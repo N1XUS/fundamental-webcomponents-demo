@@ -1,0 +1,91 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  14.20.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/%5Efile:fundamental-ngx-core-v0.36.0-rc.25.tgz: Request failed "404 Not Found"
+      at ResponseError.ExtendableBuiltin (/usr/local/lib/node_modules/yarn/lib/cli.js:696:66)
+      at new ResponseError (/usr/local/lib/node_modules/yarn/lib/cli.js:802:124)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:66215:16)
+      at Request.emit (events.js:400:28)
+      at Request.module.exports.Request.onRequestResponse (/usr/local/lib/node_modules/yarn/lib/cli.js:141767:10)
+      at ClientRequest.emit (events.js:400:28)
+      at HTTPParser.parserOnIncomingClient (_http_client.js:647:27)
+      at HTTPParser.parserOnHeadersComplete (_http_common.js:127:17)
+      at TLSSocket.socketOnData (_http_client.js:515:22)
+      at TLSSocket.emit (events.js:400:28)
+
+npm manifest: 
+  {
+    "name": "wc",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "webpack serve --config webpack.dev.js",
+      "build": "NODE_ENV=production webpack --config webpack.prod.js",
+      "test": "npx jest"
+    },
+    "devDependencies": {
+      "@angular/compiler-cli": "^14.2.2",
+      "@ngtools/webpack": "^14.2.3",
+      "@types/jest": "^27.0.2",
+      "@types/tapable": "^2.2.2",
+      "@typescript-eslint/eslint-plugin": "^4.33.0",
+      "@typescript-eslint/parser": "^4.33.0",
+      "babel-loader": "^8.2.5",
+      "clean-webpack-plugin": "^4.0.0",
+      "copy-webpack-plugin": "^9.0.1",
+      "css-loader": "^6.4.0",
+      "eslint": "^7.32.0",
+      "eslint-webpack-plugin": "^3.0.1",
+      "html-webpack-plugin": "^5.3.0",
+      "mini-css-extract-plugin": "^2.4.2",
+      "node-sass": "^6.0.1",
+      "sass-loader": "^12.1.0",
+      "style-loader": "^3.3.0",
+      "ts-jest": "^27.0.5",
+      "ts-loader": "^9.2.6",
+      "typescript": "4.6.2",
+      "typescript-plugin-css-modules": "^3.4.0",
+      "webpack": "^5.58.1",
+      "webpack-bundle-analyzer": "^4.5.0",
+      "webpack-cli": "^4.9.0",
+      "webpack-dev-server": "^4.3.1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@angular/animations": "^14.2.2",
+      "@angular/cdk": "^14.2.2",
+      "@angular/common": "^14.2.2",
+      "@angular/compiler": "^14.2.2",
+      "@angular/core": "^14.2.2",
+      "@angular/elements": "^14.2.2",
+      "@angular/forms": "^14.2.2",
+      "@angular/platform-browser": "^14.2.2",
+      "@angular/platform-browser-dynamic": "^14.2.2",
+      "@angular/router": "^14.2.2",
+      "@fundamental-ngx/core": "^0.35.3",
+      "@fundamental-ngx/i18n": "^file:fundamental-ngx-core-v0.36.0-rc.25.tgz",
+      "rxjs": "^7.5.4",
+      "zone.js": "^0.11.7"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
