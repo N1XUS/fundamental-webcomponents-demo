@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack serve --config webpack.dev.js",
     "build": "NODE_ENV=production webpack --config webpack.prod.js",
-    "test": "npx jest"
+    "test": "npx jest",
+    "serve-static": "npx live-server static"
   },
   "devDependencies": {
     "@angular/compiler-cli": "^14.2.2",
